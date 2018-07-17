@@ -1,0 +1,64 @@
+<html>
+<head>
+    <style>
+        body {
+            height: 100vh;
+            font-size: 8px;
+            padding: 10px;
+            font-family: monospace;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        tr {
+            border-bottom: 1px solid #666;
+        }
+
+        th {
+            text-align: end;
+            padding: 10px;
+        }
+        td {
+            padding: 10px;
+            text-align: end;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Now: <span id="now"></span></h2>
+    <br/>
+    <table>
+        <thead>
+            <tr>
+                <th style="width: 20px;">&nbsp;</th>
+                <th style="width: 20%;">Timer Id</th>
+                <th style="width: 40%;">Set At</th>
+                <th style="width: 20%;">Delay</th>
+                <th style="width: 20%;"></th>
+            </tr>
+        </thead>
+        <tbody id="timers">
+        </tbody>
+    </table>
+    <br/>
+    <br/>
+    <table>
+        <thead>
+            <tr>
+                <th style="width: 20px;">&nbsp;</th>
+                <th style="width: 20%;">Interval Id</th>
+                <th style="width: 40%;">Set At</th>
+                <th style="width: 20%;">Delay</th>
+                <th style="width: 20%;">Times</th>
+            </tr>
+        </thead>
+        <tbody id="intervals">
+        </tbody>
+    </table>
+    <script defer src="ti.js"></script>
+</body>
+</html>
